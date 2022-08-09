@@ -142,11 +142,13 @@ textarea:focus-visible {
 }
 .fa-brands {
   color: #cccccc;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .media {
   padding: 0px;
+  display: flex;
+  justify-content: center;
 }
 .media > li {
   display: inline;
@@ -340,6 +342,11 @@ textarea {
   .col-2 {
     margin-left: 0px;
     margin-top: 1rem;
+  }
+  .section.nine,
+  .section.three,
+  .section.seven {
+    padding: 0px;
   }
 }
 
