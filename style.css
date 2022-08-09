@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -68,34 +69,120 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: #fff;
 }
 .col-1 {
-  /* flex-basis: 40%; */
   position: relative;
   margin-top: 3rem;
   text-align: center;
 }
+.modern {
+  color: #fff;
+}
 hr {
   width: 5%;
-  text-align: left;
+  margin: 0px;
+  border: 1px solid #ff8b38;
+  border-radius: 5px;
 }
 .col-2 > p {
   color: #cccccc;
+}
+.login-header {
+  margin-bottom: 0px;
+  background-color: #f5f5f5;
+  color: #000;
+  padding: 1rem;
+}
+input[type="name"],
+input[type="password"],
+input[type="email"] {
+  padding: 1rem;
+}
+.login-header > span {
+  color: #ff8b38;
+}
+.login-container {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.button {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  background-color: transparent;
+}
+.button1 {
+  color: #fff;
+  border: 2px solid #fff;
+}
+.button2 {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #ff8b38;
+  width: 100%;
+}
+.button3 {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #ff8b38;
 }
 .fa-brands {
   color: #cccccc;
   font-size: 20px;
 }
-div.section > div {
-  box-shadow: 0px 5px 10px 0px #c5c5c5;
-}
+
 .media {
   padding: 0px;
 }
 .media > li {
   display: inline;
   margin: 30px;
+}
+
+.box1 {
+  padding: 40px;
+  color: #000;
+  margin: 2px;
+  background-color: #ff8b38;
+  color: #fff;
+}
+.box2 {
+  padding: 40px;
+  color: #000;
+  margin: 2px;
+  background-color: #333333;
+  color: #fff;
+}
+.section.two {
+  box-shadow: 0px -1px 0px rgba(50, 50, 50, 0.75);
+  padding: 3rem;
+  background-color: #f5f5f5;
+}
+.section.three > div > div:nth-child(2) > ul {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+.section.three {
+  padding: 3rem;
+}
+.section.three > div > div:nth-child(2) > ul > li {
+  padding: 1rem;
+}
+.section.four {
+  background-color: #f5f5f5;
+  padding: 3rem;
+}
+.section.five > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 @media (max-width: 800px) {
   .navbar {
@@ -146,5 +233,8 @@ div.section > div {
 @media (min-width: 800px) {
   .hero {
     height: 50%;
+  }
+  .row {
+    align-items: unset;
   }
 }
