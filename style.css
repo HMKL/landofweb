@@ -275,6 +275,9 @@ textarea:focus-visible {
   text-align: center;
   margin: 0px;
 }
+.option {
+  background-color: #fff;
+}
 .option > ul > li {
   border-bottom: 1px solid #a4a5a8;
   padding: 10px;
