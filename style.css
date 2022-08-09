@@ -267,6 +267,7 @@ textarea:focus-visible {
 }
 .about {
   display: flex;
+  justify-content: center;
 }
 .option > ul {
   padding: 0px;
