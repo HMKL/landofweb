@@ -6,6 +6,9 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 const getBtn = document.querySelector('.toggle-button');
 const getDiv = document.querySelector('.main');
 const width = window.matchMedia('(max-width:769px)');
+const getContainer = document.querySelectorAll('.container');
+getContainer[0].classList.add('add');
+getContainer[2].classList.add('add');
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
 });
@@ -20,13 +23,3 @@ getBtn.addEventListener('click', () => {
     count -= 2;
   }
 });
-
-// function checkWidth(e) {
-//   if (e.matches) {
-//     console.log('da');
-//   } else {
-//     console.log('nu');
-//   }
-// }
-// checkWidth(width);
-// width.addEventListener('change', checkWidth);
