@@ -23,3 +23,55 @@ getBtn.addEventListener('click', () => {
     count -= 2;
   }
 });
+
+
+// const btn = document.querySelector('.mainbtn');
+// const user = document.querySelector('.username');
+// const pass = document.querySelector('.password');
+// const error = document.querySelector('.user');
+// const newUser = document.createElement('p');
+// newUser.textContent = 'username must contain only letters between 8-12';
+// const newPassword = document.createElement('p');
+// newPassword.textContent = 'password must contain only digits between 4-8';
+// const passRegex = /^[0-9]{4,8}$/;
+// const regex = /^[a-z]{6,12}$/;
+
+// btn.addEventListener('submit', (e) => {
+//   e.preventDefault();
+// });
+
+// user.addEventListener('keyup', (e) => {
+//   if (regex.test(e.target.value)) {
+//     user.setAttribute('class', 'username form-control green');
+//     error.append(newUser);
+//     newUser.classList.add('green1');
+//     newUser.classList.remove('red1');
+//     console.log(e);
+//   } else {
+//     user.setAttribute('class', 'username form-control red');
+//     error.append(newUser);
+//     newUser.classList.add('red1');
+//     newUser.classList.remove('green1');
+//     if (user.value < 1) {
+//       user.setAttribute('class', 'username form-control');
+//       newUser.remove();
+//     }
+//   }
+// });
+
+// pass.addEventListener('keyup', (e) => {
+//   if (passRegex.test(e.target.value)) {
+//     pass.setAttribute('class', 'password form-control green');
+//     error.append(newPassword);
+//     newPassword.setAttribute('class', 'green1 text-center');
+//     console.log(e);
+//   } else {
+//     pass.setAttribute('class', 'password form-control red');
+//     error.append(newPassword);
+//     newPassword.setAttribute('class', 'red1 text-center');
+//     if (pass.value < 1) {
+//       pass.setAttribute('class', 'password form-control');
+//       newPassword.remove();
+//     }
+//   }
+// });
